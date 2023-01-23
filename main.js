@@ -10,6 +10,11 @@ function draw_field(k, x, y) {
     if (f.includes("t")) {
         ctx.fillRect(x*fieldsize+fieldsize/3, y*fieldsize+fieldsize/3, fieldsize/3, fieldsize/3);
     }
+    /*
+    if (f == "tttt") {
+        ctx.fillRect(x*fieldsize, y*fieldsize, fieldsize, fieldsize);
+    }
+    */
     if (f[0]=="t") {
         ctx.fillRect(x*fieldsize+fieldsize/3, y*fieldsize+0*fieldsize/3, fieldsize/3, fieldsize/3);
     } 
@@ -33,5 +38,5 @@ function draw_combs(c) {
     }
 }
 
-
+var combs = wave_function_collapse();
 draw_combs(combs);

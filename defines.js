@@ -1,18 +1,43 @@
-const gamesize = 10
-const fieldsize = 30;
+const gamesize = 20
+const fieldsize = 15;
 
-const fields = [
-    "ffff",
+
+
+const double_cons = [
     "fftt",
     "ftft",
     "fttf",
-    "fttt",
     "tfft",
     "tftf",
-    "tftt",
     "ttff",
-    "ttft",
+]
+
+const triple_cons = [   
     "tttf",
+    "ttft",
+    "tftt",
+    "fttt",
+]
+
+const fields = [
+    "ffff",
+    "ffff",
+    "ffff",
+    "ffff",
+    "ffff",
+    "ffff",
+    "ffff",
+    "ffff",
+    "ffff",
+    "ffff",
+    "ffff",
+
+    ...double_cons,
+    ...double_cons,
+
+    ...triple_cons,
+    ...triple_cons,
+
     "tttt"
 ]
 
